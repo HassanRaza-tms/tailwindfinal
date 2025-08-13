@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tailwind CSS Environment</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./src/output.css" rel="stylesheet" />
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex">
+        <!-- Side Pannel -->
+        <div class="bg-black lg:w-1/5 lg:p-6 text-white text-2xl lg:block sidebar-md-sc sidebar-xs-sc xs:flex xs:flex-col xs:justify-start xs:items-center">
+            <div class="logo">
+                <a href="#"><img src="./assets/logo-removebg-preview.png" alt=""></a>
+            </div>
+            <div class="p-3 flex items-center border-black border-[1px] rounded menu-hover">
+                <a href="" class=""><img src="assets/home.png" alt="" /></a>
+                <a href=""><p class="ml-2 lg:block xs:hidden">Dashoard</p></a>
+            </div>
+            <div class="p-3 flex items-center border-black border-[1px] rounded menu-hover">
+                <a href="" class=""><img src="assets/sort-lis.png" alt="" /></a>
+                <a href=""><p class="ml-2 lg:block xs:hidden">Order</p></a>
+            </div>
+            <div class="p-3 flex items-center border-black border-[1px] rounded menu-hover">
+                <a href="" class=""><img src="assets/cubes.png" alt="" /></a>
+                <a href=""><p class="ml-2 lg:block xs:hidden">Products</p></a>
+            </div>
+            <div class="p-3 flex items-center border-black border-[1px] rounded menu-hover">
+                <a href="" class=""><img class="w-6 h-6 inline-block" src="assets/user.png" alt="" /></a>
+                <a href=""><p class="ml-2 lg:block xs:hidden">Customers</p></a>
+            </div>
+            <div class="p-3 flex items-center border-black border-[1px] rounded menu-hover">
+                <a href="" class=""><img src="assets/file.png" alt="" /></a>
+                <a href=""><p class="ml-2 lg:block xs:hidden">Reports</p></a>
+            </div>
+            <div class="p-3 flex items-center border-black border-[1px] rounded menu-hover">
+                <a href="" class=""><img src="assets/application-settings.png" alt="" /></a>
+                <a href=""><p class="ml-2 lg:block xs:hidden">Settings</p></a>
+            </div>
+        </div>
+        <!-- Main Pannel -->
+        <div class="px-7 py-8 lg:w-4/5 main-bar-md-sc main-bar-xs-sc">
+            <!-- Top Bar -->
+            <div class="lg:flex lg:items-center lg:justify-between top-bar-md d-block-xs">
+                <h2 class="lg:text-5xl font-serif font-bold lg:inline-block head-xs-sc head-md-sc">Admin Dashboard</h2>
+                <div class="lg:flex lg:items-center menu-md menu-xs">
+                    <div class="w-48 bg-white border-2 border-gray-300 lg:py-3 pl-4 rounded-lg inline-block xs:py-1 xs:w-[65%]">
+                        <img src="assets/search-symbol.png" class="inline-block" alt="">
+                        <p class="inline-block ml-2">Search</p>
+                    </div>
+                    <div class="inline-block bg-gray-400 p-3 rounded-lg ml-5"><a href="#"><img src="assets/user-2.png"
+                                alt=""></a></div>
+                    <div class="inline-block bg-gray-400 p-3 rounded-lg ml-5"><a href="#"><img
+                                src="assets/shopping-cart.png" alt=""></a></div>
+                </div>
+            </div>
+            <p class="font-sans lg:mt-6 lg:text-2xl tagline-xs-sc">Manage Your Store Effectively</p>
+            <!-- Buttons section -->
+            <div class="lg:flex lg:justify-between lg:mt-7 btn-div-xs">
+                <div class="lg:w-[45%] lg:py-5 bg-white border-2 border-gray-300 text-center lg:text-3xl rounded-lg products-btns-md big-pr-btn-xs">
+                    <p class="font-sans">Add Product</p>
+                </div>
+                <div
+                    class="lg:w-[30%] lg:py-5 lg:mr-0 lg:mt-0 bg-blue-600 border-2 border-gray-300 text-white text-center lg:text-3xl rounded-lg products-btns-md mini-pr-btn-xs xs:mr-[4.8%]">
+                    <p class="font-sans">Remove Product</p>
+                </div>
+                <div class="lg:w-1/5 lg:py-5 lg:mt-0 bg-blue-600 border-2 border-gray-300 text-white text-center lg:text-3xl rounded-lg products-btns-md mini-pr-btn-xs">
+                    <p class="font-sans">Rererate</p>
+                </div>
+            </div>
+            <!-- Orders and Revenue section -->
+            <div class="mt-7 bg-white border-2 border-gray-300 flex lg:p-5 rounded-lg xs:p-3">
+                <div class="w-[35%]">
+                    <h3 class="font-sans font-semibold lg:text-2xl titles-xs-sc titles-md-sc">Total Orders</h3>
+                    <p class="font-sans font-semibold lg:text-4xl numbers-figures-xs-sc numbers-figures-md">1,250</p>
+                </div>
+                <div class="w-[65%]  border-l-2 border-l-gray-300 pl-5 flex items-center">
+                    <div class="inline-block bg-gray-300 lg:p-5 rounded-lg md:p-3 xs:p-2">
+                        <img class="w-[32px] h-[32px] ring-img" src="./assets/couple_14472494.png" alt="">
+                    </div>
+                    <div class="inline-block ml-5">
+                        <h3 class="font-sans font-semibold lg:text-2xl titles-xs-sc titles-md-sc">Total Revenue</h3>
+                        <p class="font-sans font-semibold lg:text-4xl numbers-figures-xs-sc numbers-figures-md">$125,000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Customers and Products section -->
+            <div class="mt-5 flex justify-between ">
+                <div class="w-[49%] lg:p-5 bg-white border-2 border-gray-300 rounded-lg xs:p-3">
+                    <h3 class="font-sans font-semibold lg:text-2xl titles-xs-sc titles-md-sc">New Customers</h3>
+                    <p class="font-sans font-semibold lg:text-4xl numbers-figures-xs-sc numbers-figures-md">350</p>
+                </div>
+                <div class="w-[49%] lg:p-5 bg-white border-2 border-gray-300 rounded-lg xs:p-3">
+                    <h3 class="font-sans font-semibold lg:text-2xl titles-xs-sc titles-md-sc">Products In Stock</h3>
+                    <p class="font-sans font-semibold lg:text-4xl numbers-figures-xs-sc numbers-figures-md">5,250</p>
+                </div>
+            </div>
+            <!-- Sales and traffic Section -->
+            <div class="lg:mt-5 flex justify-between xs:mt-3">
+                <div class="w-[49%] lg:p-5 bg-white border-2 border-gray-300 rounded-lg xs:p-3">
+                    <h3 class="font-sans font-semibold lg:text-2xl titles-xs-sc titles-md-sc">Sales Chart</h3>
+                    <div class=" flex items-center justify-center h-full w-full">
+                        <img src="./assets/sales-chart.gif" alt="" class="w-[80%] rounded-lg">
+                    </div>
+                </div>
+                <div class="w-[49%] lg:p-5 bg-white border-2 border-gray-300 rounded-lg xs:p-3">
+                    <h3 class="font-sans font-semibold lg:text-2xl titles-xs-sc titles-md-sc">Traffic Source</h3>
+                    <img src="./assets/web-traffic.gif" alt="" class=" rounded-lg mt-5">
+                </div>
+            </div>
+            <h3 class="font-sans font-semibold lg:text-3xl lg:mt-7 website-heading-xs website-heading-md">Recent Orders</h3>
+            <!-- Orders Details Table -->
+            <table class="table-fixed bg-white border-2 border-gray-300 font-medium lg:text-2xl lg:mt-7 rounded-lg border-separate border-spacing-6 w-full text-center table-changes-md table-changes-xs">
+                <thead class="lg:text-3xl font-semibold border-2 border-gray-300 table-changes table-changes-xs md:text-2xl">
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Product</th>
+                    <th>Date</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1246</td>
+                        <td class="flex items-center ">
+                            <div class="inline-block bg-gray-400 lg:p-3 rounded-full lg:mx-4 md:p-[9px] md:mx-[10px] xs:mx-[2px] xs:p-[6px]"><img src="./assets/user-2.png" alt="" class="lg:w-6 lg:h-6 md:w-5 md:h-5 xs:w-4 xs:h-4"></div>Hassan
+                        </td>
+                        <td>Smart Watch</td>
+                        <td>11-Jun-2025</td>
+                    </tr>
+                    <tr>
+                        <td>#1296</td>
+                        <td class="flex items-center ">
+                            <div class="inline-block bg-gray-400 lg:p-3 rounded-full lg:mx-4 md:p-[9px] md:mx-[10px] xs:mx-[2px] xs:p-[6px]"><img src="./assets/user-2.png" alt="" class="lg:w-6 lg:h-6 md:w-5 md:h-5 xs:w-4 xs:h-4"></div>Raza
+                        </td>
+                        <td>Earbuds</td>
+                        <td>18-Jun-2025</td>
+                    </tr>
+                    <tr>
+                        <td>#1314</td>
+                        <td class="flex items-center ">
+                            <div class="inline-block bg-gray-400 lg:p-3 rounded-full lg:mx-4 md:p-[9px] md:mx-[10px] xs:mx-[2px] xs:p-[6px]"><img src="./assets/user-2.png" alt="" class="lg:w-6 lg:h-6 md:w-5 md:h-5 xs:w-4 xs:h-4"></div>Ali
+                        </td>
+                        <td>Hair Dryer</td>
+                        <td>26-Jun-2025</td>
+                    </tr>
+                    <tr>
+                        <td>#1414</td>
+                        <td class="flex items-center ">
+                            <div class="inline-block bg-gray-400 lg:p-3 rounded-full lg:mx-4 md:p-[9px] md:mx-[10px] xs:mx-[2px] xs:p-[6px]"><img src="./assets/user-2.png" alt="" class="lg:w-6 lg:h-6 md:w-5 md:h-5 xs:w-4 xs:h-4"></div>Sakina
+                        </td>
+                        <td>Back Cover</td>
+                        <td>06-Ju1-2025</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 class="font-sans font-semibold lg:text-3xl lg:mt-7 xs:mt-4 website-heading-xs website-heading-md">Instock Products</h3>
+            <!-- Instock Products Section -->
+            <div class="flex justify-between mt-5">
+                <div class="w-[31%] flex justify-between flex-col bg-white border-2 border-gray-300 lg:p-5 rounded-lg xs:p-3">
+                    <img src="./assets/smart-watch-isolated-on-transparent-background-png-removebg-preview.png" alt="">
+                    <p class="font-sans lg:text-2xl font-semibold lg:mb-2 products-writing xs:mb-1 products-details">SMART WATCH</p>
+                    <p class="font-sans lg:text-2xl font-semibold lg:mb-4 products-writing xs:mb-2 products-details">$125</p>
+                    <div class="lg:w-[80px] text-center bg-green-300 rounded-lg font-semibold instock-tag instock-tag-xs">
+                        <p class="font-sans text-green-900 lg:text-sm md:text-xs xs:text-[10px]">IN STOCK</p>
+                    </div>
+                </div>
+                <div class="w-[31%] flex justify-between flex-col bg-white border-2 border-gray-300 lg:p-5 rounded-lg xs:p-3">
+                    <img src="./assets/earbuds.png" alt="">
+                    <p class="font-sans lg:text-2xl font-semibold lg:mb-2 products-writing xs:mb-1 products-details">AIRBUDS 425</p>
+                    <p class="font-sans lg:text-2xl font-semibold lg:mb-4 products-writing xs:mb-2 products-details">$62.5</p>
+                    <div class="lg:w-[80px] text-center bg-green-300 rounded-lg font-semibold instock-tag instock-tag-xs">
+                        <p class="font-sans text-green-900 lg:text-sm md:text-xs xs:text-[10px]">IN STOCK</p>
+                    </div>
+                </div>
+                <div class="w-[31%] flex justify-between flex-col bg-white border-2 border-gray-300 lg:p-5 rounded-lg xs:p-3">
+                    <img src="./assets/Black-dryer-isolated-on-transparent-background-PNG-removebg-preview.png" alt="">
+                    <p class="font-sans lg:text-2xl font-semibold lg:mb-2 products-writing xs:mb-1 products-details">HAIR DRYER</p>
+                    <p class="font-sans lg:text-2xl font-semibold lg:mb-4 products-writing xs:mb-2 products-details">$132.75</p>
+                    <div class="lg:w-[80px] text-center bg-green-300 rounded-lg font-semibold instock-tag instock-tag-xs">
+                        <p class="font-sans text-green-900 lg:text-sm md:text-xs xs:text-[10px]">IN STOCK</p>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <footer class="text-center lg:pt-14 font-sans lg:text-2xl font-semibold footer-xs-sc">
+                <p>Built With Tailwind CSS - BUY IT</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
