@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hover CSS */
+.menu-hover{
+    @apply  hover:border-white
+}
+
+/* ExtraSmall (Mobile) Screen Css (min-width: 412px) */
+.website-heading-xs{
+    @apply xs:text-xl xs:mt-4
+}
+.sidebar-xs-sc{
+    @apply xs:w-[9%]
+}
+.main-bar-xs-sc{
+    @apply xs:w-[91%]
+}
+.d-block-xs{
+    @apply xs:block
+}
+.menu-xs{
+    @apply xs:justify-around xs:flex xs:items-center
+}
+.head-xs-sc{
+    @apply xs:text-3xl xs:mb-3
+}
+.tagline-xs-sc{
+    @apply xs:text-lg xs:mt-4
+}
+.big-pr-btn-xs{
+    @apply xs:w-full xs:text-xl xs:py-3
+}
+.mini-pr-btn-xs{
+    @apply xs:w-[47%] xs:text-xl xs:py-3 xs:inline-block xs:mt-4
+}
+.btn-div-xs{
+    @apply xs:block xs:mt-4
+}
+.titles-xs-sc{
+    @apply xs:text-lg
+}
+.numbers-figures-xs-sc{
+    @apply xs:text-2xl
+}
+.ring-img{
+    @apply xs:w-[28px] xs:h-[28px]
+}
+.table-changes-xs{
+    @apply xs:text-base xs:mt-4
+}
+.products-details{
+    @apply xs:text-sm
+}
+.instock-tag-xs{
+    @apply xs:px-2 xs:py-1 w-[60px]
+}
+.footer-xs-sc{
+    @apply xs:text-lg xs:pt-8
+}
+
+/* Mid screen Css (min-width: 768px) */
+.website-heading-md{
+    @apply xs:text-2xl xs:mt-6
+}
+.sidebar-md-sc{
+    @apply md:w-[10%]
+}
+
+.main-bar-md-sc{
+    @apply md:w-[85%]
+}
+.top-bar-md{
+    @apply md:flex md:items-center md:justify-between
+}
+.head-md-sc{
+    @apply md:text-4xl md:inline-block
+}
+.menu-md{
+    @apply md:flex md:items-center md:justify-between
+}
+.products-btns-md{
+    @apply md:text-2xl md:py-4
+}
+.titles-md-sc{
+    @apply md:text-xl
+}
+.numbers-figures-md{
+    @apply md:text-2xl
+}
+.table-changes-md{
+    @apply md:text-xl
+}
+.products-writing-md{
+    @apply md:text-lg
+}
+.instock-tag{
+    @apply md:p-2 md:w-[70px]
+}
